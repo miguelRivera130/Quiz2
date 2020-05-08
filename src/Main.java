@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 import Model.Cuadrado;
-import Model.Netflix;
 import processing.core.PApplet;
 
 public class Main extends PApplet {
@@ -82,7 +81,7 @@ public class Main extends PApplet {
 		for (int i = 0; i < cuadrados.length; i++) {
 			for (int j = 0; j < cuadrados[i].length; j++) {
 
-				figuras.get(i).pintar();
+				figuras.get(j).pintar();
 
 				new Thread(figuras.get(i)).start();
 
